@@ -59,5 +59,12 @@ $fontsize-5: 13px;
   padding-bottom: 2rem;
 }
 
-%hero-coment {
+%button-major {
+  height: 3rem;
+  width: 20rem;
+  font-family: $font-2;
+  font-size: $fontsize-2;
+  background-color: $color-pink;
+  border: none;
+  border-radius: 1rem;
 }

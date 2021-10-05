@@ -1,15 +1,9 @@
-@use 'base' as *;
+@use "base" as *;
 
 // reusable selectors
 
 .main-btn {
-  height: 3rem;
-  width: 20rem;
-  font-family: $font-2;
-  font-size: $fontsize-2;
-  background-color: $color-pink;
-  border: none;
-  border-radius: 1rem;
+  @extend %button-major;
   a {
     text-decoration: none;
     color: $color-white;
@@ -28,5 +22,37 @@
     position: relative;
     box-shadow: none;
     top: 5px;
+  }
+}
+
+.cart-btn {
+  @extend %button-major;
+  width: 10rem;
+  font-size: $fontsize-3;
+  background-color: $color-white;
+  border: solid $color-black 1px;
+  border-radius: 0.3rem;
+  a {
+    text-decoration: none;
+    color: $color-white;
+  }
+}
+
+.add-btn {
+  @extend %button-major;
+  width: 10rem;
+  font-size: $fontsize-3;
+  background-color: $color-white;
+  border-radius: 0.2rem;
+  margin-top: 1rem;
+  box-shadow: 5px 5px 20px black;
+  a {
+    text-decoration: none;
+    color: $color-black;
+  }
+  &:hover {
+    a {
+      color: $color-green;
+    }
   }
 }
